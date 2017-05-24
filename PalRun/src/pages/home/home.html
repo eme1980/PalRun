@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      PalRun<sub><small>alpha</small></sub>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Latitude: {{locationTracker.lat}}</h3>
+  <h3>Longitude: {{locationTracker.lng}}</h3>
+  <button ion-button full primary (click)="start()">Start Tracking</button>
+<button ion-button full secondary (click)="stop()">Stop Tracking</button>
+</ion-content>
